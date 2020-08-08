@@ -64,7 +64,7 @@ export default {
       activeIndex: '1',
       showVerticalMenu: false,
       navList: [
-        { name: '主页', path: '/' , isSubShow:false},
+        { name: '网站首页', path: '/' , isSubShow:false},
         { name: '关于我们', path: '/aboutus', isSubShow:false},
         // { name: '关于我们', path: '/aboutus', isSubShow:false, child: [
         //   { name: '企业概况', path: '/aboutus/profile'},
@@ -73,20 +73,25 @@ export default {
         //   { name: '发展历程', path: '/aboutus/devHistory'},
         //   { name: '企业荣誉', path: '/aboutus/honor'},
         // ] },
-        { name: '应用领域', path: '/apparea', isSubShow:false, child: [
+        { name: '耗材中心', path: '/apparea', isSubShow:false, child: [
           // { name: '所有', path: '/apparea/all'},
           // { name: '简介', path: '/apparea/introduction'}
         ]},
         // { name: '产品技术', path: '/prod', isSubShow:false},
-        { name: '产品列表', path: '/prod/list', isSubShow:false, child: [
+        { name: '委托加工', path: '/prod/list', isSubShow:false, child: [
           // { name: '产品展示', path: '/prod/show'},
           // { name: '产品列表', path: '/prod/list'},
           // { name: '产品简介', path: '/prod/introduction'}
         ] },
-        { name: '新闻资讯', path: '/news/all', isSubShow:false, child: [
+        { name: '资讯中心', path: '/news/all', isSubShow:false, child: [
           // { name: '所有新闻', path: '/news/all'},
           // { name: '新闻详情', path: '/news/details'}
         ]},
+        { name: '企业风采', path: '/news/all', isSubShow:false, child: [
+          // { name: '所有新闻', path: '/news/all'},
+          // { name: '新闻详情', path: '/news/details'}
+        ]},
+        { name: '常见问题', path: '/contactus', isSubShow:false},
         { name: '联系我们', path: '/contactus', isSubShow:false}
         // { name: '联系我们', path: '/contactus', isSubShow:false, child: [
         //   { name: '联系我们', path: '/contactus/index'},
@@ -197,7 +202,7 @@ export default {
             position: absolute;
             top: -25PX;
             left: 200px;
-            height: 120PX;
+            height: 90PX;
             // width: 195PX;
           }
       }
@@ -214,7 +219,7 @@ export default {
         .imgPic{
         position: absolute;
         left: 200px;
-        height: 120PX;
+        height: 90PX;
       }
       }
     }

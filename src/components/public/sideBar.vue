@@ -43,7 +43,7 @@ export default {
         window.scrollTo(0, 0)
       },
       gotoFriendNet() {
-      window.location.href = 'http://www.rdmicro.com'
+      window.open('http://www.memstools.cn') 
     }
   }
 };
@@ -79,7 +79,7 @@ export default {
     .friendImg{
       height: 30PX;
       width: 30PX;
-      margin-bottom: 10PX;
+      background: #fff;
     }
     .Box, .topBox {
       position: absolute;
