@@ -372,8 +372,8 @@ const prodCaseList = [
 const allNewsList= [
   {
       id: '1',
-      title: '2017年苏州工业园区金鸡湖人才计划科技领军人才',
-      time: '04-24 13:27:49',
+      title: '2018“研材微纳杯”优秀论文征集活动',
+      time: '2018-11-29',
       keyword: '人才,获奖',
       src: require('$assets/CommonImg/1.jpg'),
       desc: '2017年12月27日下午，苏州工业园区第八届金鸡湖人才表彰大会在现代大厦召开，此次大会授予437人“金鸡湖人才”....',
@@ -390,10 +390,10 @@ const allNewsList= [
   },
   {
       id: '2',
-      title: '祝贺我司获得“高新技术企业”荣誉证书',
+      title: '2017年“研材微纳杯”论文征集活动获奖名单揭晓',
       src: require('$assets/CommonImg/2.jpg'),
       keyword: '证书,获奖',
-      time: '2017-02-14 09:51',
+      time: '2018-11-29',
       desc: '苏州美图半导体技术有限公司被授予“高新技术企业”荣誉证书，大大提高了我公司参与各项招投标业务的竞争力，同时也....',
       content: `<div class="entry-header mb-30">
           <div class="entry-content">

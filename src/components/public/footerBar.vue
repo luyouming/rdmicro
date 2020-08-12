@@ -3,7 +3,7 @@
   <div class="footerInfo">
     <div class="footerBox">
       <img class="imgPic" :src="require(`$static/icon/logo-mens.png`)" alt="">
-      <p class="paragraph">苏州美图半导体技术有限公司成立于2012年1月，主要从事半导体和MEMS领域微细加工设备的研发、生产和销售。</p>
+      <p class="paragraph">苏州研材微纳科技有限公司成立于2015年，是一家专门从事半导体、MEMS、生物芯片等方面耗材和委托加工业务的科技创新公司。</p>
       <!-- <div><img class="iconPic" v-for="(item, index) in footerIcons" :key="item + index" :src="require(`$static/icon/${item}`)" alt=""></div> -->
     </div>
     <div class="footerBox">
@@ -33,7 +33,8 @@
   </div>
   <div class="Tips">
     <p>苏ICP备18021576号-1&演示系统&</p>
-    <p>本站暂为&演示系统&使用，请勿用于正式运营</p>
+    <!-- <p>本站暂为&演示系统&使用，请勿用于正式运营</p> -->
+    <p>版权所有 © 2011-2014 苏州研材微纳科技有限公司</p>
   </div>
   </div>
 </template>
@@ -46,12 +47,12 @@ export default {
     return {
       footerIcons: ['person.png','person.png','person.png','person.png'],
       footerNews: commonInfo.latestNews,
-      footerContactWay: [{name: '联系人-段小姐', contactWay: '18112606475'},
+      footerContactWay: [{name: '咨询热线', contactWay: '0512-68636965'},
                         //  {name: '联系人-冒小姐', contactWay: '18360485933'},
-                         {name: '电话', contactWay: '0512 62995316'},
+                         {name: '传真', contactWay: '0512-62872362'},
                          {name: '网址', contactWay: 'www.memstools.cn'},
-                         {name: '邮箱', contactWay: 'info@memstools.cn'},
-                         {name: '地址', contactWay: '江苏省苏州市工业园区星湖街218号生物纳米园A7-506'},]
+                         {name: '邮箱', contactWay: 'sales@rdmicro.com'},
+                         {name: '地址', contactWay: '江苏省苏州市工业园区若水路398号  中科院苏州纳米所B705'},]
     }
   },
   mounted() {
@@ -95,7 +96,7 @@ export default {
       .imgPic{
         width: 210PX;
         height: 150PX;
-        margin-bottom:-30PX;
+        // margin-bottom:-30PX;
       }
       .paragraph{
         text-align: left;

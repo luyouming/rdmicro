@@ -2,14 +2,14 @@
   <div class="swiper-Box">
     <!-- v-show="activeIndex === 2" -->
     <div class="back1" @click="gotoNews(0)" v-show="activeIndex !== 2">
-      <p class="title"><span class="year">2012</span>公司员工荣称</p>
-      <p class="award">苏州工业园区科技</p>
-      <p class="award">领军人才</p>
+      <p class="title"><span class="year">2018</span>公司员工荣称</p>
+      <p class="award">"研材微纳杯"</p>
+      <p class="award">优秀论文征集活动</p>
     </div>
     <div class="back2" @click="gotoNews(1)" v-show="activeIndex === 2">
       <div>
-      <p class="title">国家重点支持</p>
-      <p class="award">高新技术企业</p>
+      <p class="title">2017年"研材微纳杯"</p>
+      <p class="award">论文征集活动获奖名单</p>
       </div>
     </div>
     <div class="swiper-container">
@@ -137,16 +137,20 @@ export default {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    .back2 > div{
+      border:1px solid red;
+    }
     .title{
       color: rgb(0, 195, 237);
       font-size: .9rem;
       font-weight: 500;
       padding: 15px;
       font-family: "微软雅黑";
+      max-width: 500PX;
       border-top: 5px solid rgb(0, 195, 237);
       background: #333;
       animation: rightEaseInAnimate 2s ease 1; /*调用动画：动画名、时间、时间线条、播放次数*/
-    animation-fill-mode: forwards;/*定义动画结束的状态*/
+      animation-fill-mode: forwards;/*定义动画结束的状态*/
     }
     .award{
       color: #fff;
