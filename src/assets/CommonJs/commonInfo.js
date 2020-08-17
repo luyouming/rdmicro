@@ -2,7 +2,7 @@ import config from "@/config/index";
 // 首页应用领域的相关数据
 const productList = [{
   id: '1',
-  name: "MEMS",
+  name: "硅片",
   desc:'MEMS器件制造',
   size: '200mm * 100mm',
   material: '硅胶纳米材料',
@@ -13,7 +13,7 @@ const productList = [{
 },
 {
   id: '2',
-  name: "三维封装",
+  name: "衬底",
   desc:'CIS三维封装',
   size: '200mm * 100mm',
   material: '硅胶纳米材料',
@@ -24,7 +24,7 @@ const productList = [{
 },
 {
   id: '3',
-  name: "临时键合",
+  name: "光刻胶",
   desc:'临时键合',
   size: '200mm * 100mm',
   material: '硅胶纳米材料',
@@ -34,22 +34,65 @@ const productList = [{
   discription: ""
 },
 {
-  id: '4',
-  name: "生物芯片",
-  desc:'生物芯片专用设备',
+    id: '4',
+    name: "特殊光敏材料",
+    desc:'生物芯片专用设备',
+    size: '200mm * 100mm',
+    material: '硅胶纳米材料',
+    technique: '工艺23432',
+    iconUrl: `product4.png`,
+    imgUrl: `appArea4.jpg`,
+    discription: ""
+  },{
+  id: '5',
+  name: "光刻配套试剂",
+  desc:'MEMS器件制造',
   size: '200mm * 100mm',
   material: '硅胶纳米材料',
   technique: '工艺23432',
-  iconUrl: `product4.png`,
-  imgUrl: `appArea4.jpg`,
+  iconUrl: `product1.png`,
+  imgUrl: `appArea1.jpg`,
+  discription: " "
+},
+{
+  id: '6',
+  name: "无尘耗材",
+  desc:'CIS三维封装',
+  size: '200mm * 100mm',
+  material: '硅胶纳米材料',
+  technique: '工艺23432',
+  iconUrl: `product2.png`,
+  imgUrl: `appArea2.jpg`,
+  discription: " "
+},
+{
+  id: '7',
+  name: "科学仪器",
+  desc:'临时键合',
+  size: '200mm * 100mm',
+  material: '硅胶纳米材料',
+  technique: '工艺23432',
+  iconUrl: `product3.png`,
+  imgUrl: `appArea3.jpg`,
   discription: ""
-}
+},
+{
+    id: '8',
+    name: "工具",
+    desc:'生物芯片专用设备',
+    size: '200mm * 100mm',
+    material: '硅胶纳米材料',
+    technique: '工艺23432',
+    iconUrl: `product4.png`,
+    imgUrl: `appArea4.jpg`,
+    discription: ""
+  }
 ]
 // 产品列表的相关信息
 const prodList= [
   {
       id: '1',
-      title: '阳极键合',
+      title: '镀膜----非金属镀膜',
       desc: '阳极键合技术也称为场辅助密封、静电键合。它可以将玻璃与金属、合金或半导体键合在一起而不用任何粘结剂。',
       src: require('$assets/CommonImg/ProdList/阳极键合.png'),
       // 概述
@@ -75,7 +118,7 @@ const prodList= [
   },
   {
       id: '2',
-      title: '解键合',
+      title: '叉指电极',
       desc: '工艺完成以后，需将器件晶圆与载片分离。减薄后的器件晶圆会由其他器件晶圆(晶圆级键合，永久键合至另一个晶圆上)或胶膜(芯片-品圆键合时黏附在划片使用的支撑胶膜上)支撑。',
       src: require('$assets/CommonImg/ProdList/解键合.png'),
       // 概述
@@ -101,7 +144,7 @@ const prodList= [
   },
   {
       id: '3',
-      title: '键合对准',
+      title: '7英寸铬板',
       desc: '晶圆键合对准机是把一片晶圆与另一片晶圆进行对准。',
       src: require('$assets/CommonImg/ProdList/键合对准.png'),
       // 概述
@@ -126,7 +169,7 @@ const prodList= [
   },
   {
       id: '4',
-      title: '晶圆喷胶机',
+      title: '微流体芯片',
       desc: '晶圆喷胶机是一种能够覆盖崎岖形貌的光刻胶涂覆设备，同时对厚胶涂覆和节省光刻胶方面有着非常明显的优势。',
       src: require('$assets/CommonImg/ProdList/喷胶机.png'),
       // 概述
@@ -201,7 +244,7 @@ const prodList= [
   },
   {
       id: '6',
-      title: '桌面显影机',
+      title: '光刻',
       desc: '显影机是将晒制好的印版通过半自动和全自动的程序将显影、冲洗、涂胶、烘干等工序一次性部分或全部完成的印刷处理设备。',
       src: require('$assets/CommonImg/ProdList/桌面式显影机.png'),
       // 概述
@@ -232,7 +275,7 @@ const prodList= [
   },
   {
       id: '7',
-      title: '匀胶机',
+      title: 'MEMS器件',
       desc: '匀胶机是在高速旋转的基片上，滴注各类胶液，利用离心力使滴在基片上的胶液均匀地涂覆在基片上的设备，膜的厚度取决于匀胶机的转速和溶胶的黏度。',
       src: require('$assets/CommonImg/ProdList/匀胶机.png'),
       // 概述
@@ -257,7 +300,7 @@ const prodList= [
   },
   {
       id: '8',
-      title: '热板',
+      title: '生物芯片',
       desc: '可编程存储多达20个程序，每个程序可设阶梯温度值30个阶段，单个阶段定时最长可达10小时（600分钟）',
       src: require('$assets/CommonImg/ProdList/热板.png'),
       // 技术指标
@@ -275,7 +318,7 @@ const prodList= [
   },
   {
       id: '9',
-      title: '贴膜机',
+      title: '基因芯片',
       desc: '贴膜机是专门用于电子/通讯/半导体等行业贴保护膜及防暴膜的机器，可确保无气泡无擦痕贴膜。',
       src: require('$assets/CommonImg/ProdList/贴膜机.png'),
       summary: `贴膜机是专门用于电子/通讯/半导体等行业贴保护膜及防暴膜的机器，可确保无气泡无擦痕贴膜。`,
@@ -291,6 +334,170 @@ const prodList= [
       1、专门用于晶圆、玻璃、陶瓷等圆片的贴膜设备
       <br>2、可加热特氟龙托盘
       <br>3、干膜贴膜，电镀贴膜，键合干膜等`
+  },
+  {
+      id: '10',
+      title: '刻蚀——干法刻蚀（刻蚀硅模板）',
+      desc: '贴膜机是专门用于电子/通讯/半导体等行业贴保护膜及防暴膜的机器，可确保无气泡无擦痕贴膜。',
+      src: require('$assets/CommonImg/ProdList/贴膜机.png'),
+      summary: `贴膜机是专门用于电子/通讯/半导体等行业贴保护膜及防暴膜的机器，可确保无气泡无擦痕贴膜。`,
+      // 技术指标
+      TechnicalIndicators: `
+      <div class="subTitle">技术指标</div>
+      <span style="display: block;">真空贴膜机技术指标</span>
+      1、专门用于晶圆、玻璃、陶瓷等衬底的贴膜设备。真空环境下进行贴膜，可避免产生气泡
+      <br>2、真空度：-100KPa
+      <br>3、加热温度：室温~150℃
+      <br>4、适合SU8干膜，电镀干膜，键合干膜等
+      <span style="margin-top: 0.2rem;display: block;">手动贴膜机技术指标</span>
+      1、专门用于晶圆、玻璃、陶瓷等圆片的贴膜设备
+      <br>2、可加热特氟龙托盘
+      <br>3、干膜贴膜，电镀贴膜，键合干膜等`
+  },
+  {
+      id: '11',
+      title: '刻蚀——湿法刻蚀（倒金字塔）',
+      desc: '贴膜机是专门用于电子/通讯/半导体等行业贴保护膜及防暴膜的机器，可确保无气泡无擦痕贴膜。',
+      src: require('$assets/CommonImg/ProdList/贴膜机.png'),
+      summary: `贴膜机是专门用于电子/通讯/半导体等行业贴保护膜及防暴膜的机器，可确保无气泡无擦痕贴膜。`,
+      // 技术指标
+      TechnicalIndicators: `
+      <div class="subTitle">技术指标</div>
+      <span style="display: block;">真空贴膜机技术指标</span>
+      1、专门用于晶圆、玻璃、陶瓷等衬底的贴膜设备。真空环境下进行贴膜，可避免产生气泡
+      <br>2、真空度：-100KPa
+      <br>3、加热温度：室温~150℃
+      <br>4、适合SU8干膜，电镀干膜，键合干膜等
+      <span style="margin-top: 0.2rem;display: block;">手动贴膜机技术指标</span>
+      1、专门用于晶圆、玻璃、陶瓷等圆片的贴膜设备
+      <br>2、可加热特氟龙托盘
+      <br>3、干膜贴膜，电镀贴膜，键合干膜等`
+  },
+  {
+      id: '12',
+      title: '镀膜----金属镀膜',
+      desc: '贴膜机是专门用于电子/通讯/半导体等行业贴保护膜及防暴膜的机器，可确保无气泡无擦痕贴膜。',
+      src: require('$assets/CommonImg/ProdList/贴膜机.png'),
+      summary: `贴膜机是专门用于电子/通讯/半导体等行业贴保护膜及防暴膜的机器，可确保无气泡无擦痕贴膜。`,
+      // 技术指标
+      TechnicalIndicators: `
+      <div class="subTitle">技术指标</div>
+      <span style="display: block;">真空贴膜机技术指标</span>
+      1、专门用于晶圆、玻璃、陶瓷等衬底的贴膜设备。真空环境下进行贴膜，可避免产生气泡
+      <br>2、真空度：-100KPa
+      <br>3、加热温度：室温~150℃
+      <br>4、适合SU8干膜，电镀干膜，键合干膜等
+      <span style="margin-top: 0.2rem;display: block;">手动贴膜机技术指标</span>
+      1、专门用于晶圆、玻璃、陶瓷等圆片的贴膜设备
+      <br>2、可加热特氟龙托盘
+      <br>3、干膜贴膜，电镀贴膜，键合干膜等`
+  },
+  {
+      id: '13',
+      title: '划片',
+      desc: '贴膜机是专门用于电子/通讯/半导体等行业贴保护膜及防暴膜的机器，可确保无气泡无擦痕贴膜。',
+      src: require('$assets/CommonImg/ProdList/贴膜机.png'),
+      summary: `贴膜机是专门用于电子/通讯/半导体等行业贴保护膜及防暴膜的机器，可确保无气泡无擦痕贴膜。`,
+      // 技术指标
+      TechnicalIndicators: `
+      <div class="subTitle">技术指标</div>
+      <span style="display: block;">真空贴膜机技术指标</span>
+      1、专门用于晶圆、玻璃、陶瓷等衬底的贴膜设备。真空环境下进行贴膜，可避免产生气泡
+      <br>2、真空度：-100KPa
+      <br>3、加热温度：室温~150℃
+      <br>4、适合SU8干膜，电镀干膜，键合干膜等
+      <span style="margin-top: 0.2rem;display: block;">手动贴膜机技术指标</span>
+      1、专门用于晶圆、玻璃、陶瓷等圆片的贴膜设备
+      <br>2、可加热特氟龙托盘
+      <br>3、干膜贴膜，电镀贴膜，键合干膜等`
+  },
+  {
+      id: '14',
+      title: 'sub光刻',
+      desc: '贴膜机是专门用于电子/通讯/半导体等行业贴保护膜及防暴膜的机器，可确保无气泡无擦痕贴膜。',
+      src: require('$assets/CommonImg/ProdList/贴膜机.png'),
+      summary: `贴膜机是专门用于电子/通讯/半导体等行业贴保护膜及防暴膜的机器，可确保无气泡无擦痕贴膜。`,
+      // 技术指标
+      TechnicalIndicators: `
+      <div class="subTitle">技术指标</div>
+      <span style="display: block;">真空贴膜机技术指标</span>
+      1、专门用于晶圆、玻璃、陶瓷等衬底的贴膜设备。真空环境下进行贴膜，可避免产生气泡
+      <br>2、真空度：-100KPa
+      <br>3、加热温度：室温~150℃
+      <br>4、适合SU8干膜，电镀干膜，键合干膜等
+      <span style="margin-top: 0.2rem;display: block;">手动贴膜机技术指标</span>
+      1、专门用于晶圆、玻璃、陶瓷等圆片的贴膜设备
+      <br>2、可加热特氟龙托盘
+      <br>3、干膜贴膜，电镀贴膜，键合干膜等`
+  },
+  {
+      id: '15',
+      title: '探测器',
+      desc: '贴膜机是专门用于电子/通讯/半导体等行业贴保护膜及防暴膜的机器，可确保无气泡无擦痕贴膜。',
+      src: require('$assets/CommonImg/ProdList/贴膜机.png'),
+      summary: `贴膜机是专门用于电子/通讯/半导体等行业贴保护膜及防暴膜的机器，可确保无气泡无擦痕贴膜。`,
+      // 技术指标
+      TechnicalIndicators: `
+      <div class="subTitle">技术指标</div>
+      <span style="display: block;">真空贴膜机技术指标</span>
+      1、专门用于晶圆、玻璃、陶瓷等衬底的贴膜设备。真空环境下进行贴膜，可避免产生气泡
+      <br>2、真空度：-100KPa
+      <br>3、加热温度：室温~150℃
+      <br>4、适合SU8干膜，电镀干膜，键合干膜等
+      <span style="margin-top: 0.2rem;display: block;">手动贴膜机技术指标</span>
+      1、专门用于晶圆、玻璃、陶瓷等圆片的贴膜设备
+      <br>2、可加热特氟龙托盘
+      <br>3、干膜贴膜，电镀贴膜，键合干膜等`
+  },
+  {
+      id: '16',
+      title: '3英寸铬板',
+      desc: '晶圆键合对准机是把一片晶圆与另一片晶圆进行对准。',
+      src: require('$assets/CommonImg/ProdList/键合对准.png'),
+      // 概述
+      summary: `晶圆键合对准机是把一片晶圆与另一片晶圆进行对准。利用上下两片晶圆的对准标记，通过光学视觉系统，实现上下两片晶圆的光学对准，随后通过机械的方法，使两片晶圆接触，完成对准。`,
+      // 对准原理
+      principle: `
+      <div class="subTitle">对准原理</div> 
+      第一个晶圆面朝下置于晶圆对准设备卡盘并传送到对准机内。<br>
+      对准机内，晶圆在Z轴方向上移动直到被顶部的传输夹具真空吸附固定。<br>
+      被传输夹具固定的第一个晶圆将成为后续对准工艺的基准，确定所有对准移动的起点。<br>
+      每个晶圆的左右两边各有一个对准标记（标记的距离越大越好）<br>
+      显微镜移动寻找对准标记并聚焦<br>
+      以面朝上的方式将第二个晶圆载入机台，与第1个晶圆面面相向<br>
+      第2个晶圆被真空吸附固定在位于可移动的对准台的卡盘上<br>
+      对准台沿x/y/方向运动或θ角旋转，查找第2个晶圆的对准标记并对准<br>
+      对准后底层晶圆提升到接触位置，并通过卡盘边缘卡箍将晶圆固定`,
+      // 技术指标
+      TechnicalIndicators: `
+      <div class="subTitle">技术指标</div> 
+      1、通过光学视觉系统，实现上下两片晶圆的光学对准；随后通过机械的方法，使两片晶圆间隔夹持，完成对准。<br>
+      2、对准精度：±5μm对准精度；`
+  },
+  {
+      id: '17',
+      title: '5英寸铬板',
+      desc: '晶圆键合对准机是把一片晶圆与另一片晶圆进行对准。',
+      src: require('$assets/CommonImg/ProdList/键合对准.png'),
+      // 概述
+      summary: `晶圆键合对准机是把一片晶圆与另一片晶圆进行对准。利用上下两片晶圆的对准标记，通过光学视觉系统，实现上下两片晶圆的光学对准，随后通过机械的方法，使两片晶圆接触，完成对准。`,
+      // 对准原理
+      principle: `
+      <div class="subTitle">对准原理</div> 
+      第一个晶圆面朝下置于晶圆对准设备卡盘并传送到对准机内。<br>
+      对准机内，晶圆在Z轴方向上移动直到被顶部的传输夹具真空吸附固定。<br>
+      被传输夹具固定的第一个晶圆将成为后续对准工艺的基准，确定所有对准移动的起点。<br>
+      每个晶圆的左右两边各有一个对准标记（标记的距离越大越好）<br>
+      显微镜移动寻找对准标记并聚焦<br>
+      以面朝上的方式将第二个晶圆载入机台，与第1个晶圆面面相向<br>
+      第2个晶圆被真空吸附固定在位于可移动的对准台的卡盘上<br>
+      对准台沿x/y/方向运动或θ角旋转，查找第2个晶圆的对准标记并对准<br>
+      对准后底层晶圆提升到接触位置，并通过卡盘边缘卡箍将晶圆固定`,
+      // 技术指标
+      TechnicalIndicators: `
+      <div class="subTitle">技术指标</div> 
+      1、通过光学视觉系统，实现上下两片晶圆的光学对准；随后通过机械的方法，使两片晶圆间隔夹持，完成对准。<br>
+      2、对准精度：±5μm对准精度；`
   }
 ]
 // 产品案例的内容 (id要与产品列表里的一致)

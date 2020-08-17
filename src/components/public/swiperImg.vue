@@ -2,7 +2,7 @@
   <div class="swiper-Box">
     <!-- v-show="activeIndex === 2" -->
     <div class="back1" @click="gotoNews(0)" v-show="activeIndex !== 2">
-      <p class="title"><span class="year">2018</span>公司员工荣称</p>
+      <p class="title"><span class="year">2018</span>公司举办了</p>
       <p class="award">"研材微纳杯"</p>
       <p class="award">优秀论文征集活动</p>
     </div>
@@ -137,15 +137,16 @@ export default {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    .back2 > div{
-      border:1px solid red;
-    }
+    // .back2 > div{
+    //   border:1px solid red;
+    // }
     .title{
       color: rgb(0, 195, 237);
       font-size: .9rem;
       font-weight: 500;
       padding: 15px;
       font-family: "微软雅黑";
+      margin: auto;
       max-width: 500PX;
       border-top: 5px solid rgb(0, 195, 237);
       background: #333;

@@ -348,7 +348,7 @@ export default {
       margin: 0px 0 0px 0;
       .prod-item {
         position: relative;
-        margin-bottom: 60px;
+        margin-bottom: 30PX;
         .item-img {
           img {
             width: 100%;

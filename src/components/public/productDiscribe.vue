@@ -57,7 +57,7 @@ export default {
   background: #fff;
   color: #000;
   padding-top: 40px;
-  margin-bottom: 20PX;
+  margin-bottom: 30PX;
   .name {
     font-size: 18PX;
     font-family: "PingFang SC";
